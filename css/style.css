@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
+    margin:0;
+    margin-bottom: 15vw;
     padding: 0;
     background-color: #f2f2f2;
 }
@@ -93,11 +94,10 @@ body{
 .parent2{
     overflow: scroll;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
     background-color: #f2f2f2;
-    min-height: 6vw;
+    min-height: 4vw;
+    min-height: 10vw;
     scrollbar-width:none;
     width: 100%;
 }
@@ -106,26 +106,29 @@ body{
     grid-row: grid-row-start 1;
     display: flex;
     align-items: center;
-    width: 25vw;
+    width: 35vw;
     height: 10vw;
     border-radius: 10vw;
     text-decoration: none;
     border-radius: 1vw;
     border: 1px solid #c2c2c2;
-    margin: 3vw;
+    margin: 2vw;
     padding: 1vw;
     position: relative;
     color: #292526;
 }
 .text {
-    position: relative;
+    position: block;
     display: flex;
+    align-items: center;
+    justify-content: right;
     font-size: 2vw;
+    width: 20vw;
+    text-align: right;
 }
 .normal{
-    display: flex;
+    display: block;
     margin-left: -5vw;
-    position: relative;
 }
 .hover{
     position: absolute;
@@ -163,7 +166,7 @@ body{
     flex-wrap: wrap;
     background-color: #f2f2f2;
     gap: 3vw;
-    padding-bottom: 20vw;
+    padding-bottom: 30vw;
     padding: 2vw;
 }
 
@@ -271,6 +274,12 @@ body{
     justify-self: center;
     display: flex;
 }
+.floatmenu__item:hover{
+    transition: ease-in-out 0.3s;
+}
+.floatmenu__item:active{
+    transition: ease-out 1s ;
+}
 .icon{
     position: absolute;
     justify-self: center;
@@ -362,7 +371,7 @@ body{
         flex-wrap: wrap;
         background-color: #f2f2f2;
         gap: 3vw;
-        padding-bottom: 20vw;
+        padding-bottom: 30vw;
         padding: 1vw;
     }
     .deco{
