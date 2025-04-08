@@ -137,8 +137,9 @@ body{
 .text {
     position: relative;
     font-size: 4vw;
-    width: 19vw;
-    text-align: right;
+    width: 15vw;
+    text-align: center;
+    justify-content: center;
 }
 .selec:hover .nornal{
     opacity: 0;
@@ -281,7 +282,6 @@ body{
     transition: ease-out 1s ;
 }
 .icon{
-    position: absolute;
     justify-self: center;
     align-self: center;
     width: 7vw;
